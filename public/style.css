@@ -830,6 +830,16 @@ footer p {
 @media (max-width: 900px) {
   .editorial-header {
     padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-left a, .header-right a {
+    margin: 0 15px;
+  }
+  .header-left, .header-right {
+    display: flex;
+    justify-content: center;
   }
   .hero-text-bg {
     font-size: 30vw;
@@ -839,6 +849,9 @@ footer p {
   }
   .hero-title-front {
     font-size: 12vw;
+    text-align: center;
+    left: 0;
+    width: 100%;
   }
   .hero-title-sub {
     display: none;
@@ -847,10 +860,12 @@ footer p {
     grid-template-columns: 1fr;
   }
   .about-content {
-    padding: 40px 20px;
+    padding: 50px 20px;
+    text-align: center;
   }
   .editorial-page-header {
-    padding-left: 20px;
+    padding-left: 0;
+    text-align: center;
   }
   .editorial-list-container {
     padding: 0 20px 50px;
@@ -858,8 +873,14 @@ footer p {
   .editorial-item, .editorial-item:nth-child(even) {
     flex-direction: column;
     margin-bottom: 80px;
+    align-items: center;
   }
   .editorial-info {
-    padding: 20px 0 0;
+    padding: 30px 0 0;
+    text-align: center;
+    align-items: center;
+  }
+  .editorial-price-link {
+    align-self: center;
   }
 }
