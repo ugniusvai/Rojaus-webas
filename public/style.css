@@ -854,7 +854,8 @@ footer p {
     font-size: 14vw;
     text-align: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
+    line-height: 1;
   }
   .hero-title-sub {
     position: relative;
@@ -864,8 +865,10 @@ footer p {
     font-size: 14vw;
     text-align: center;
     width: 100%;
-    margin-top: -10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: block;
+    line-height: 1;
   }
   .about-grid {
     grid-template-columns: 1fr;
