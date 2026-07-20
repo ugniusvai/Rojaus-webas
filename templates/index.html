@@ -10,52 +10,43 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <a href="/" class="logo">Rojaus Galerija</a>
-          <ul class="nav-links">
-            <li><a href="/" class="active">Pradžia</a></li>
-            <li><a href="/catalog">Katalogas</a></li>
-            <li><a href="/contact">Susisiekti</a></li>
-          </ul>
-          <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
+    <header class="editorial-header">
+      <div class="header-left">
+        <a href="/">Pradžia</a>
+        <a href="/catalog">Katalogas</a>
+      </div>
+      <div class="header-right">
+        <a href="/contact">Susisiekti</a>
       </div>
     </header>
 
     <main>
-      <section class="hero hero-split">
-        <div class="container hero-container">
-          <div class="hero-content-left">
-            <h1>Pajuskite Meną<br>Kiekvienoje Detalėje</h1>
-            <p>Unikalūs, rankų darbo tapybos kūriniai, skirti jūsų erdvei praturtinti ir suteikti jai išskirtinumo. Kiekvienas potėpis pasakoja istoriją.</p>
-            <div class="hero-buttons">
-              <a href="/catalog" class="btn">Peržiūrėti Katalogą</a>
-              <a href="#apie" class="btn btn-outline">Apie Kūrėją</a>
-            </div>
-          </div>
-          
-          <div class="hero-image-right">
-            <img src="/assets/painting1.jpg" alt="Pagrindinis paveikslas" class="main-hero-img" />
-          </div>
+      <section class="hero editorial-hero">
+        <div class="hero-text-bg">
+          <span>ROJ</span>
+          <span class="offset">AUS</span>
+        </div>
+        <div class="hero-image-overlay">
+          <img src="/assets/painting1.jpg" alt="Pagrindinis paveikslas" />
+          <h1 class="hero-title-front">ROJAUS</h1>
+          <h1 class="hero-title-sub">GALERIJA</h1>
+        </div>
+        <div class="hero-desc">
+          <p>Unikalūs, rankų darbo tapybos kūriniai, skirti jūsų erdvei praturtinti ir suteikti jai išskirtinumo. Kiekvienas potėpis pasakoja istoriją.</p>
+          <a href="/catalog" class="learn-more">Katalogas &rarr;</a>
         </div>
       </section>
 
-      <section id="apie" class="about-section">
-        <div class="container about-container">
-          <div class="about-text">
+      <section id="apie" class="about-editorial">
+        <div class="about-grid">
+          <div class="about-image-full">
+            <img src="/assets/paveikslas1.jpg" alt="Kūrėjo darbas" />
+          </div>
+          <div class="about-content">
             <h2>Apie Mane</h2>
             <p>Sveiki atvykę į mano asmeninę galeriją. Tapyba man – tai būdas kalbėtis su pasauliu be žodžių. Kiekvienas mano darbas gimsta iš asmeninių patirčių, gamtos stebėjimo ir gilaus noro perteikti emociją.</p>
             <p>Mano kūryboje vyrauja tiek ekspresyvūs abstraktūs motyvai, tiek atidžiai studijuotos figūrinės kompozicijos. Naudoju aukščiausios kokybės aliejinius dažus bei natūralias drobes, užtikrindamas, kad kūriniai išliktų gyvybingi ištisus dešimtmečius.</p>
             <p>Tikiu, kad menas turi ne tik puošti sienas, bet ir tapti erdvių siela.</p>
-          </div>
-          <div class="about-image">
-            <img src="/assets/painting2.jpg" alt="Kūrėjo darbas" />
           </div>
         </div>
       </section>

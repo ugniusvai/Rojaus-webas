@@ -10,49 +10,39 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <a href="/" class="logo">Rojaus Galerija</a>
-          <ul class="nav-links">
-            <li><a href="/">Pradžia</a></li>
-            <li><a href="/catalog" class="active">Katalogas</a></li>
-            <li><a href="/contact">Susisiekti</a></li>
-          </ul>
-          <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
+    <header class="editorial-header">
+      <div class="header-left">
+        <a href="/">Pradžia</a>
+        <a href="/catalog" class="active">Katalogas</a>
+      </div>
+      <div class="header-right">
+        <a href="/contact">Susisiekti</a>
       </div>
     </header>
 
     <main class="catalog">
-      <section class="page-header">
-        <div class="container">
-          <h1>Paveikslų Katalogas</h1>
-          <p>Atraskite unikalius kūrinius savo erdvei</p>
-        </div>
+      <section class="page-header editorial-page-header">
+        <h1>Katalogas</h1>
       </section>
 
-      <section class="container">
-        <div class="grid">
+      <section class="editorial-list-container">
+        <div class="editorial-list">
           {% for painting in paintings %}
-          <a href="/painting/{{ painting.id }}" class="artwork-card">
-            <div class="artwork-image">
+          <div class="editorial-item">
+            <a href="/painting/{{ painting.id }}" class="editorial-image-link">
               <img src="{{ painting.image }}" alt="{{ painting.title }}" onerror="this.src='/assets/painting1.jpg'" />
-            </div>
-            <div class="artwork-info">
+            </a>
+            <div class="editorial-info">
               <div>
-                <h3 class="artwork-title">{{ painting.title }}</h3>
-                <p class="artwork-details">{{ painting.technique }}</p>
+                <h3 class="editorial-title"><a href="/painting/{{ painting.id }}">{{ painting.title }}</a></h3>
+                <p class="editorial-author">Ugnius Vaitiekėnas <span class="separator">|</span> {{ painting.technique }}</p>
+                <p class="editorial-desc">{{ painting.description }}</p>
               </div>
-              <p class="artwork-price">{{ painting.price }}</p>
+              <a href="/painting/{{ painting.id }}" class="editorial-price-link">{{ painting.price }} &rarr;</a>
             </div>
-          </a>
+          </div>
           {% else %}
-            <p>Šiuo metu paveikslų nėra.</p>
+            <p style="text-align:center; padding: 100px;">Šiuo metu paveikslų nėra.</p>
           {% endfor %}
         </div>
       </section>
