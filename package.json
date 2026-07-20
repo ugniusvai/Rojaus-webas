@@ -1,0 +1,8 @@
+{
+  "name": "rojausgalerija",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Build successful'",
+    "dev": "flask --app api.index run -p 3000"
+  }
+}
