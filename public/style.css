@@ -1,7 +1,7 @@
 :root {
-  --bg-color: #F9F8F6; /* Ivory / Off-white */
-  --text-color: #1A1A1A; /* Near black */
-  --accent-color: #8C8271; /* Muted warm grey/brown */
+  --bg-color: #222222; /* Dark charcoal */
+  --text-color: #F1EDE4; /* Cream white */
+  --accent-color: #A39B8B; /* Muted warm grey */
   --font-primary: 'Inter', sans-serif;
   --font-heading: 'Playfair Display', serif;
   --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -197,7 +197,7 @@ nav {
 /* --- About Section --- */
 .about-section {
   padding: 100px 0;
-  background-color: #fff;
+  background-color: #1C1C1C;
 }
 
 .about-container {
@@ -215,7 +215,7 @@ nav {
 .about-text p {
   margin-bottom: 20px;
   font-size: 1.1rem;
-  color: #444;
+  color: #CCC;
   line-height: 1.8;
 }
 
@@ -284,7 +284,7 @@ nav {
 
 .artwork-image {
   overflow: hidden;
-  background-color: #eee;
+  background-color: #333;
   aspect-ratio: 4/5;
 }
 
@@ -327,9 +327,9 @@ nav {
 .contact-form {
   width: 100%;
   max-width: 600px;
-  background: #fff;
+  background: #1C1C1C;
   padding: 50px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
 
 .form-group {
@@ -342,7 +342,7 @@ nav {
   width: 100%;
   padding: 10px 0;
   border: none;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #555;
   background: transparent;
   font-family: var(--font-primary);
   font-size: 1rem;
@@ -384,7 +384,7 @@ nav {
 footer {
   padding: 40px 0;
   text-align: center;
-  border-top: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 footer p {
@@ -509,10 +509,10 @@ footer p {
   align-items: start;
 }
 .product-image-container {
-  background-color: #eee;
+  background-color: #333;
   aspect-ratio: 4/5;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
 }
 .product-image-container img {
   width: 100%;
@@ -555,7 +555,7 @@ footer p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 40px;
-  color: #444;
+  color: #CCC;
 }
 .product-btn {
   width: 100%;
