@@ -1,6 +1,15 @@
+import os
 from flask import Flask, render_template, abort, request
 
-app = Flask(__name__, template_folder='templates', static_folder='public', static_url_path='/')
+# Use absolute paths so it works regardless of working directory
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+app = Flask(
+    __name__,
+    template_folder=os.path.join(BASE_DIR, 'templates'),
+    static_folder=os.path.join(BASE_DIR, 'public'),
+    static_url_path=''
+)
 
 PAINTINGS = [
     {
@@ -55,10 +64,10 @@ def catalog():
 
 @app.route('/painting/<int:painting_id>')
 def painting(painting_id):
-    painting = next((p for p in PAINTINGS if p['id'] == painting_id), None)
-    if not painting:
+    p = next((p for p in PAINTINGS if p['id'] == painting_id), None)
+    if not p:
         abort(404)
-    return render_template('painting.html', painting=painting)
+    return render_template('painting.html', painting=p)
 
 @app.route('/contact')
 def contact():
