@@ -1,7 +1,7 @@
 :root {
-  --bg-color: #222222; /* Dark charcoal */
+  --bg-color: #3B0D0D; /* Deep burgundy / dark red from user image */
   --text-color: #F1EDE4; /* Cream white */
-  --accent-color: #A39B8B; /* Muted warm grey */
+  --accent-color: #D4AF37; /* Elegant gold for contrast */
   --font-primary: 'Inter', sans-serif;
   --font-heading: 'Playfair Display', serif;
   --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -197,7 +197,7 @@ nav {
 /* --- About Section --- */
 .about-section {
   padding: 100px 0;
-  background-color: #1C1C1C;
+  background-color: #260808;
 }
 
 .about-container {
@@ -327,7 +327,7 @@ nav {
 .contact-form {
   width: 100%;
   max-width: 600px;
-  background: #1C1C1C;
+  background: #260808;
   padding: 50px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
@@ -718,7 +718,7 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1A1A1A;
+  background-color: #260808;
 }
 
 .about-content h2 {
