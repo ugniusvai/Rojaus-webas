@@ -38,75 +38,22 @@
 
       <section class="container">
         <div class="grid">
-          <!-- Artwork 1 -->
-          <article class="artwork-card">
+          {% for painting in paintings %}
+          <a href="/painting/{{ painting.id }}" class="artwork-card">
             <div class="artwork-image">
-              <img src="/assets/paveikslas1.jpg" alt="Paveikslas 1" onerror="this.src='/assets/painting1.jpg'" />
+              <img src="{{ painting.image }}" alt="{{ painting.title }}" onerror="this.src='/assets/painting1.jpg'" />
             </div>
             <div class="artwork-info">
               <div>
-                <h3 class="artwork-title">Portretas profiliu</h3>
-                <p class="artwork-details">Aliejus ant drobės</p>
+                <h3 class="artwork-title">{{ painting.title }}</h3>
+                <p class="artwork-details">{{ painting.technique }}</p>
               </div>
-              <p class="artwork-price">Kaina sutartinė</p>
+              <p class="artwork-price">{{ painting.price }}</p>
             </div>
-          </article>
-
-          <!-- Artwork 2 -->
-          <article class="artwork-card">
-            <div class="artwork-image">
-              <img src="/assets/paveikslas2.jpg" alt="Paveikslas 2" onerror="this.src='/assets/painting1.jpg'" />
-            </div>
-            <div class="artwork-info">
-              <div>
-                <h3 class="artwork-title">Skriejanti figūra</h3>
-                <p class="artwork-details">Eskizas / Grafika</p>
-              </div>
-              <p class="artwork-price">Kaina sutartinė</p>
-            </div>
-          </article>
-
-          <!-- Artwork 3 -->
-          <article class="artwork-card">
-            <div class="artwork-image">
-              <img src="/assets/paveikslas3.jpg" alt="Paveikslas 3" onerror="this.src='/assets/painting1.jpg'" />
-            </div>
-            <div class="artwork-info">
-              <div>
-                <h3 class="artwork-title">Figūra (Aktas)</h3>
-                <p class="artwork-details">Pieštukas / Anglis</p>
-              </div>
-              <p class="artwork-price">Kaina sutartinė</p>
-            </div>
-          </article>
-
-          <!-- Artwork 4 -->
-          <article class="artwork-card">
-            <div class="artwork-image">
-              <img src="/assets/paveikslas4.jpg" alt="Paveikslas 4" onerror="this.src='/assets/painting1.jpg'" />
-            </div>
-            <div class="artwork-info">
-              <div>
-                <h3 class="artwork-title">Vakaro peizažas</h3>
-                <p class="artwork-details">Aliejus ant drobės</p>
-              </div>
-              <p class="artwork-price">Kaina sutartinė</p>
-            </div>
-          </article>
-
-          <!-- Artwork 5 -->
-          <article class="artwork-card">
-            <div class="artwork-image">
-              <img src="/assets/paveikslas5.jpg" alt="Paveikslas 5" onerror="this.src='/assets/painting1.jpg'" />
-            </div>
-            <div class="artwork-info">
-              <div>
-                <h3 class="artwork-title">Upės slėnis</h3>
-                <p class="artwork-details">Aliejus ant drobės</p>
-              </div>
-              <p class="artwork-price">Kaina sutartinė</p>
-            </div>
-          </article>
+          </a>
+          {% endelse %}
+            <p>Šiuo metu paveikslų nėra.</p>
+          {% endfor %}
         </div>
       </section>
     </main>
@@ -114,8 +61,10 @@
     <footer>
       <div class="container">
         <p>&copy; 2026 Rojaus Galerija. Visos teisės saugomos.</p>
-        <p style="margin-top: 10px;">
-          <a href="https://www.instagram.com/_heaven_up_/" target="_blank" rel="noopener noreferrer">Instagram: @_heaven_up_</a>
+        <p style="margin-top: 15px;">
+          <a href="https://www.instagram.com/_heaven_up_/" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
         </p>
       </div>
     </footer>

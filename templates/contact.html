@@ -32,12 +32,18 @@
       <section class="page-header">
         <div class="container">
           <h1>Susisiekite su mumis</h1>
-          <p>Turite klausimų ar domina konkretus paveikslas? Parašykite mums.</p>
-          <p style="margin-top: 20px;">
-            <a href="https://www.instagram.com/_heaven_up_/" target="_blank" rel="noopener noreferrer" style="font-weight: 600; font-size: 1.1rem;">
-              Instagram: @_heaven_up_
+          <p>Turite klausimų ar domina konkretus paveikslas? Parašykite mums arba paskambinkite.</p>
+          
+          <div class="contact-methods">
+            <a href="tel:+37065514715" class="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +370 655 14715
             </a>
-          </p>
+            
+            <a href="https://www.instagram.com/_heaven_up_/" target="_blank" rel="noopener noreferrer" class="contact-link social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -54,7 +60,7 @@
           </div>
 
           <div class="form-group">
-            <input type="text" id="subject" name="subject" required />
+            <input type="text" id="subject" name="subject" value="{{ prefilled_subject }}" required />
             <label for="subject">Dominantis paveikslas / Tema</label>
           </div>
           
@@ -71,8 +77,10 @@
     <footer>
       <div class="container">
         <p>&copy; 2026 Rojaus Galerija. Visos teisės saugomos.</p>
-        <p style="margin-top: 10px;">
-          <a href="https://www.instagram.com/_heaven_up_/" target="_blank" rel="noopener noreferrer">Instagram: @_heaven_up_</a>
+        <p style="margin-top: 15px;">
+          <a href="https://www.instagram.com/_heaven_up_/" target="_blank" rel="noopener noreferrer" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
         </p>
       </div>
     </footer>
