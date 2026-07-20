@@ -848,13 +848,24 @@ footer p {
     width: 90%;
   }
   .hero-title-front {
-    font-size: 12vw;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    font-size: 14vw;
     text-align: center;
-    left: 0;
     width: 100%;
+    margin-top: 10px;
   }
   .hero-title-sub {
-    display: none;
+    position: relative;
+    top: auto;
+    right: auto;
+    writing-mode: horizontal-tb;
+    font-size: 14vw;
+    text-align: center;
+    width: 100%;
+    margin-top: -10px;
+    display: block;
   }
   .about-grid {
     grid-template-columns: 1fr;
