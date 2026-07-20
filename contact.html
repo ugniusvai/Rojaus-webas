@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Susisiekti | Rojaus Galerija</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="/" class="logo">Rojaus Galerija</a>
+          <ul class="nav-links">
+            <li><a href="/">Pradžia</a></li>
+            <li><a href="/catalog.html">Katalogas</a></li>
+            <li><a href="/contact.html" class="active">Susisiekti</a></li>
+          </ul>
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Susisiekite su mumis</h1>
+          <p>Turite klausimų ar domina konkretus paveikslas? Parašykite mums.</p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Ačiū už jūsų žinutę! Susisieksime netrukus.');">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required />
+            <label for="name">Jūsų vardas</label>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" id="email" name="email" required />
+            <label for="email">El. pašto adresas</label>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required />
+            <label for="subject">Dominantis paveikslas / Tema</label>
+          </div>
+          
+          <div class="form-group">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">Jūsų žinutė</label>
+          </div>
+          
+          <button type="submit" class="btn">Siųsti žinutę</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Rojaus Galerija. Visos teisės saugomos.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
