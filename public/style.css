@@ -849,7 +849,7 @@ footer p {
   }
   .hero-title-front {
     position: absolute;
-    bottom: -15%;
+    bottom: 5%;
     left: -5%;
     font-size: 20vw;
     text-align: left;
@@ -861,7 +861,7 @@ footer p {
   .hero-title-sub {
     position: absolute;
     top: 10%;
-    right: -10%;
+    right: 2%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-size: 15vw;
@@ -872,6 +872,10 @@ footer p {
     display: block;
     line-height: 0.85;
     z-index: 10;
+  }
+  .hero-text-content {
+    margin-top: 50px;
+    padding: 0 20px;
   }
   .about-grid {
     grid-template-columns: 1fr;
