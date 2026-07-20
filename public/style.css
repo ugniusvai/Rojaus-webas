@@ -848,27 +848,30 @@ footer p {
     width: 90%;
   }
   .hero-title-front {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    font-size: 14vw;
-    text-align: center;
-    width: 100%;
-    margin-top: 30px;
-    line-height: 1;
+    position: absolute;
+    bottom: -15%;
+    left: -5%;
+    font-size: 20vw;
+    text-align: left;
+    width: auto;
+    margin-top: 0;
+    line-height: 0.85;
+    z-index: 10;
   }
   .hero-title-sub {
-    position: relative;
-    top: auto;
-    right: auto;
-    writing-mode: horizontal-tb;
-    font-size: 14vw;
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 10%;
+    right: -10%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 15vw;
+    text-align: right;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     display: block;
-    line-height: 1;
+    line-height: 0.85;
+    z-index: 10;
   }
   .about-grid {
     grid-template-columns: 1fr;
